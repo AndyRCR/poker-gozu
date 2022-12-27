@@ -1,0 +1,8 @@
+.resultDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.resultDiv > div{
+    padding: 20px;
+}
