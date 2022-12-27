@@ -50,50 +50,50 @@ const Result = () => {
   return (
     <div className='resultContainer'>
       <div className='resultDiv'>
-        <div>
+        <div className='Probabilidad'>
           <h4>Probabilidades: </h4>
           <ul>
-            <li>td (Todos diferentes): 0.30240</li>
-            <li>1p (1 par): 0.50400</li>
-            <li>2p (2 pares): 0.10800</li>
-            <li>tercia (3 iguales): 0.07200</li>
-            <li>full house (1 par y 1 trío): 0.00900</li>
-            <li>poker (4 iguales): 0.00450</li>
-            <li>quintilla (5 iguales): 0.00010</li>
+            <li>Td(Todos diferentes): 0.30240</li>
+            <li>1P(1 par): 0.50400</li>
+            <li>2P(2 pares): 0.10800</li>
+            <li>Tercia(3 iguales): 0.07200</li>
+            <li>Full House(1 par y 1 trío): 0.00900</li>
+            <li>Poker(4 iguales): 0.00450</li>
+            <li>Quintilla(5 iguales): 0.00010</li>
           </ul>
         </div>
 
-        <div>
-          <h4>Frecuencia esperada: </h4>
+        <div className='FrecuenciaEsperada'>
+          <h4 >Frecuencia esperada: </h4>
           <ul>
-            <li>td: {fe['td']}</li>
-            <li>1p: {fe['1p']}</li>
-            <li>2p: {fe['2p']}</li>
-            <li>tercia: {fe['tercia']}</li>
-            <li>full: {fe['full']}</li>
-            <li>poker: {fe['poker']}</li>
-            <li>quintilla: {fe['quintilla']}</li>
+            <li>TD: {fe['td']}</li>
+            <li>1P: {fe['1p']}</li>
+            <li>2P: {fe['2p']}</li>
+            <li>TERCIA: {fe['tercia']}</li>
+            <li>FULL: {fe['full']}</li>
+            <li>POKER: {fe['poker']}</li>
+            <li>QUINTILLA: {fe['quintilla']}</li>
           </ul>
         </div>
 
-        <div>
+        <div className='FrecuenciaObtenida'>
           <h4>Frecuencia obtenida: </h4>
-          <ul>
-            <li>td: {fo['td']}</li>
-            <li>1p: {fo['1p']}</li>
-            <li>2p: {fo['2p']}</li>
-            <li>tercia: {fo['tercia']}</li>
-            <li>full: {fo['full']}</li>
-            <li>poker: {fo['poker']}</li>
-            <li>quintilla: {fo['quintilla']}</li>
+          <ul >
+            <li>TD: {fo['td']}</li>
+            <li>1P: {fo['1p']}</li>
+            <li>2P: {fo['2p']}</li>
+            <li>TERCIA: {fo['tercia']}</li>
+            <li>FULL: {fo['full']}</li>
+            <li>POKER: {fo['poker']}</li>
+            <li>QUINTILLA: {fo['quintilla']}</li>
           </ul>
         </div>
       </div>
 
-      <div>
+      <div className='Resultado'>
         <h4>Resultados obtenidos</h4>
           <p>Variable: {resultado['x2']}</p>
-          <p>{resultado.resultado} que los números siguen una distribución uniforme</p>
+          <p >{resultado.resultado} que los números siguen una distribución uniforme</p>
       </div>
     </div>
   )

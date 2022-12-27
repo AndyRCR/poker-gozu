@@ -7,7 +7,7 @@ import './PokerContainer.css'
 const PokerContainer = () => {
   return (
     <div className='pokerContainer'>
-      <h2>Poker gozu</h2>
+      <h1>Poker gozu</h1>
       <div className='fileContainer'>
         <FileInput/>
         <FileData/>

@@ -1,8 +1,57 @@
-.resultDiv{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+
 
 .resultDiv > div{
     padding: 20px;
+    margin-left: 100px;
+    
+}
+ul {
+    list-style: none;
+}
+.FrecuenciaEsperada{
+   
+    position: relative;
+    left: 120px;
+    top: 150px;
+    width: 250px;
+    
+}
+.Probabilidad{
+    position: absolute;
+    top: 630px;
+    left: 0;
+    
+}
+.FrecuenciaObtenida{
+position: relative;
+    left: 950px;
+    top: -50px;
+}
+.Resultado{
+    position: relative;
+    left: 210px;
+    top: 80px;
+    text-align: center;
+}
+ .Probabilidad > ul > li{
+    display: inline-block;
+    padding-top: 9px;
+    margin-right: 25px;
+    font-size: 15px;
+ }
+
+h4{
+    color: #90e7a3;
+}
+@keyframes anime{
+    0% {color: #9ffafd;transform: rotate(0deg);} /*Amarillo*/
+   25% {color: #afffcd;transform: rotate(5deg);} /*Naranja*/
+   50% {color: #90e7a3;transform: rotate(0deg);} /*Negro*/
+   75% {color: #7aff6e;transform: rotate(-5deg);} /*Otra vez naranja*/
+  100% {color: #32ff03;transform: rotate(0deg);} /*Otra vez amarillo*/
+}
+h1 {
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
